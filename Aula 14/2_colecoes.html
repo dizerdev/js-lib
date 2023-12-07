@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+    <script>
+      window.onload = function () {
+        alert(document.links.length);
+        alert(document.getElementsByTagName('a').length);
+        for (i = 0; i < document.links.length; i++) {
+          alert(document.links[i].href);
+        }
+      };
+    </script>
+  </head>
+
+  <body>
+    <div id="paragrafos">
+      <p class="teste">Primeiro Parágrafo</p>
+      <p>Segundo Paragrafo</p>
+      <p>Terceiro Paragrafo</p>
+    </div>
+    <div id="links">
+      <p><a class="teste" href="http://www.impacta.com.br">Impacta</a></p>
+      <p><a href="http://www.impacta.edu.br/">FIT</a></p>
+      <p><a href="http://aluno.impactaonline.com.br">Impacta on line</a></p>
+    </div>
+    <div id="inputs">
+      Content for id "inputs" Goes Here
+      <form id="form1" name="form1" method="post">
+        <p>
+          <label for="nome">Nome:</label>
+          <input class="teste" type="text" name="nome" id="nome" />
+          <br />
+          <label for="idade">Idade:</label>
+          <input type="text" name="idade" id="idade" />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="sexo" id="radio" value="M" />
+          <label for="masc">Masculino </label>
+          <input type="radio" name="sexo" id="radio2" value="F" />
+          <label for="fem">Feminino </label>
+        </p>
+        <p>
+          <input type="button" name="botao" id="botao" value="Enviar" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
